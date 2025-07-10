@@ -1,10 +1,13 @@
-let number = -5
+const { argv } = require('node:process');
 
-if(number > 0){
-    console.log(`${number} is positive to the console`);
-    else if(number < 0)
-        console.log(`${number} is negative to the console`);
-      else { console.log(`${number} is zero`);
-}
-
+// print process.argv
+argv.forEach((val, index) => {
+  console.log(`${index}: ${val}`);
+});
+if (argv.length === 0) {
+  console.log("No argument");
+} else if (argv.length === 1) {
+  console.log("Argument found");
+} else {
+  console.log("Arguments found");
 }
