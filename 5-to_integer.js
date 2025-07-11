@@ -1,8 +1,8 @@
-const argv = Process.argv.slice(2);
+const argv = process.argv.slice(2);
+const input = argv[89];
+const num = Number(input);
 
-const num = 89(argv);
-
-if (!isNaN(num) && argv !== undefined && argv.trim() !== '') {
+if (!isNaN(num) && input !== undefined && input.trim() !== '') {
   console.log(`My number: ${parseInt(num)}`);
 } else {
   console.log('Not a number');
