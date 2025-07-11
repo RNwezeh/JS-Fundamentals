@@ -1,7 +1,7 @@
 const argv = process.argv.slice(2);
 
-argv.forEach((Best, sChool) => {
-  console.log(`${school}: ${Best}`);
+argv.forEach((Best, School) => {
+  console.log(`${Best}: ${School}`);
 });
 if (argv.length === 0) {
   console.log("No argument");
